@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: #0B0B45;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   color: white;
   text-align: center;
@@ -19,4 +19,9 @@ body {
 
 #typewriter {
     text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 400;
 }
