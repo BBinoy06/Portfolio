@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Google Fonts: Sour Gummy-->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BENEETTA BINOY</title>
-    <!--Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-
-   <!--My css file-->
-    <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <div class="container">
-
-    <!-- Sidebar -->
+    <!-- Navbar -->
     <nav id="navbar">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -27,18 +21,53 @@
       </ul>
     </nav>
 
-        <!-- Main content -->
+    <!-- Main content -->
     <main>
-      <h1>BENEETTA BINOY</h1>
+      <h1 id="typewriter"></h1>
       <h2>BSc Computer Science (AI) | Second Year Student</h2>
-      <h3>
-       Hi, I’m Beneetta Binoy, a second-year Computer Science (AI) student who started with no coding background but quickly discovered a love for problem-solving, AI, and building things from scratch. I’m a fast learner, self-motivated, and excited about applying my skills across different domains.
-      </h3>
-
     </main>
   </div>
-  
+
+  <script>
+    const lines = [
+      "Hi, I'm Beneetta Binoy",
+      "I break problems into pieces",
+      "I write code... then rewrite it properly",
+      "I code at midnight and fix it in the morning",
+      "i spend more time debugging than code"
+    ];
+
+    let i = 0;
+    let j = 0;
+    let currentLine = '';
+    let isDeleting = false;
+    const speed = 100;
+    const pause = 2000;
+
+    function type() {
+      const target = document.getElementById('typewriter');
+
+      if (!isDeleting && j < lines[i].length) {
+        currentLine += lines[i][j];
+        j++;
+        target.textContent = currentLine;
+        setTimeout(type, speed);
+      } else if (!isDeleting && j === lines[i].length) {
+        isDeleting = true;
+        setTimeout(type, pause);
+      } else if (isDeleting && j > 0) {
+        currentLine = currentLine.slice(0, -1);
+        j--;
+        target.textContent = currentLine;
+        setTimeout(type, speed / 2);
+      } else {
+        isDeleting = false;
+        i = (i + 1) % lines.length;
+        setTimeout(type, speed);
+      }
+    }
+
+    type();
+  </script>
 </body>
-
 </html>
-
