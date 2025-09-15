@@ -4,6 +4,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   color: white;
+  text-align: center;
 }
 
 #navbar {
@@ -14,4 +15,8 @@ body {
     left: 0;
     z-index: 1000;
 
+}
+
+#typewriter {
+    text-align: center;
 }
