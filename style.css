@@ -16,20 +16,31 @@ body {
   background-color: white;
   padding: 10px 0;
   z-index: 1000;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar li {
+  margin: 0 15px;
 }
 
 #navbar a {
   color: #0B0B45;
   text-decoration: none;
   font-weight: bold;
-  margin: 0 15px;
-  display: flex;
 }
 
 #navbar a:hover {
   color: #007BFF;
 }
+
 
 .container {
   padding-top: 70px;
