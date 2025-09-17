@@ -142,11 +142,12 @@ h1, h2 {
 }
 
 .skill-bar {
-  background-color: #2C2C72;
+  background-color: #ddd;
   border-radius: 12px;
   overflow: hidden;
   height: 25px;
 }
+
 
 .skill-level {
   height: 100%;
