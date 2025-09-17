@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
   <div class="container">
@@ -22,15 +21,26 @@
       </ul>
     </nav>
 
-  <header>
-    <div class="top-left">
+    <header class="hero">
+      
+      <div class="hero-left">
         <h1><span class="name">BENEETTA BINOY</span></h1>
-        <p>BSc Computer Science (AI) | Second Year Student | Aspiring AI Developer </p>
+        <p class="subtitle">BSc Computer Science (AI) | Second Year Student | Aspiring AI Developer</p>
         <p id="typewriter"></p>
-    </div>
-  </header>
+      </div>
 
+      
+      <div class="hero-right">
+        <img src="codeskillbox.png" alt="Code Skill Box" class="code-img">
+      </div>
+    </header>
 
+    <section id="AboutMe">
+      <h2>About Me</h2>
+    </section>
+  </div>
+
+  
   <script>
     const lines = [
       "Hi, I'm Beneetta Binoy",
@@ -72,10 +82,5 @@
 
     type();
   </script>
-
-
-    <section id="AboutMe">
-    <h2>About Me</h2>
-    </section>
 </body>
 </html>
