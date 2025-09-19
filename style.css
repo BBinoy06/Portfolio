@@ -155,7 +155,9 @@ h1, h2 {
 }
 
 #projects {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 80px 20px;
   max-width: 1000px;
   margin: 0 auto;
@@ -175,6 +177,7 @@ h1, h2 {
 
 .carousel-track {
   display: flex;
+  justify-content: center;
   transition: transform 0.5s ease-in-out;
 }
 
