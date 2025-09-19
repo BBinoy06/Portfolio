@@ -93,77 +93,66 @@ h1, h2 {
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
+/* Skills Section */
 #skills {
-  padding: 80px 40px;
-  max-width: 1000px;
-  margin: 0 auto;
-  color: white;
-}
-
-#skills h2 {
-  text-align: center;
-  margin-bottom: 60px;
-  font-size: 2.2rem;
-  color: #ffb6c1;
-  letter-spacing: 1px;
-}
-
-.skills-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 40px;
+  padding: 60px 80px;
 }
 
-.skills-column h3 {
-  margin-bottom: 25px;
-  font-size: 1.5rem;
-  color: #ffd6e0;
+.skills-category {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.skills-category h3 {
   text-align: center;
-  border-bottom: 2px solid #2C2C72;
-  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
 }
 
 .skill {
-  margin: 18px 0;
+  margin-bottom: 15px;
 }
 
-.skill span {
-  display: block;
-  margin-bottom: 6px;
+.skill-name {
   font-weight: bold;
-  color: #f1f1f1;
+  margin-bottom: 6px;
+  display: block;
 }
 
 .skill-bar {
-  background-color: #ffffff;
-  border-radius: 12px;
+  height: 20px;
+  background: #fff; 
+  border-radius: 10px;
   overflow: hidden;
-  height: 22px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
 }
 
-.skill-level {
+.skill-fill {
   height: 100%;
-  border-radius: 12px 0 0 12px;
-  transition: width 1s ease-in-out;
+  border-radius: 10px;
 }
 
-.skill-level.green { background-color: #a8e6cf; }
-.skill-level.pink  { background-color: #ffb6c1; }
-.skill-level.blue  { background-color: #add8e6; }
-
-@media (max-width: 900px) {
-  .skills-container { grid-template-columns: 1fr; }
+.programming .skill-fill {
+  background: #b3e6b3; /* pastel green */
 }
 
-/* Projects */
+.technical .skill-fill {
+  background: #f7b5d5; /* pastel pink */
+}
+
+.soft .skill-fill {
+  background: #add8e6; /* light blue */
+}
+
+/* Projects Section */
 #projects {
-  padding: 80px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
   text-align: center;
+  padding: 80px 20px;
 }
 
 .project-carousel {
@@ -171,10 +160,8 @@ h1, h2 {
   width: 80%;
   max-width: 700px;
   margin: 0 auto;
-  overflow: hidden;
-  border-radius: 15px;
-  background: #fff;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  display: flex;
+  justify-content: center;
 }
 
 .carousel-track {
@@ -184,32 +171,11 @@ h1, h2 {
 
 .carousel-track a {
   flex: 0 0 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .carousel-track img {
-  width: 95%;
+  width: 100%;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.25);
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
   cursor: pointer;
-  margin: 0 auto;
 }
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255,255,255,0.9);
-  border: none;
-  font-size: 1.6rem;
-  padding: 8px;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-
-.arrow.left { left: 10px; }
-.arrow.right { right: 10px; }
-
-.arrow:hover { transform: translateY(-50%) scale(1.05); }
