@@ -153,15 +153,20 @@ h1, h2 {
 #projects {
   text-align: center;
   padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#projects h2 {
+  margin-bottom: 40px;
 }
 
 .project-carousel {
   position: relative;
-  width: 80%;
+  width: 100%;
   max-width: 700px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  overflow: hidden;
 }
 
 .carousel-track {
@@ -179,3 +184,18 @@ h1, h2 {
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
   cursor: pointer;
 }
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.7);
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.arrow.left { left: 10px; }
+.arrow.right { right: 10px; }
