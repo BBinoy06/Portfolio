@@ -4,6 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: white;
   text-align: center;
+  overflow-x: hidden;
 }
 
 #navbar {
@@ -56,7 +57,7 @@ h1, h2 {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
+  text-align: center;
 }
 
 .hero {
@@ -64,8 +65,10 @@ h1, h2 {
   align-items: center;
   justify-content: center;
   gap: 50px;
-  padding: 120px 50px 80px;
+  padding: 120px 20px 80px;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hero-left {
@@ -93,12 +96,13 @@ h1, h2 {
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
-/* Skills Section */
 #skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  padding: 60px 80px;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .skills-category {
@@ -106,6 +110,7 @@ h1, h2 {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: #0B0B45;
 }
 
 .skills-category h3 {
@@ -126,7 +131,7 @@ h1, h2 {
 
 .skill-bar {
   height: 20px;
-  background: #fff; 
+  background: #fff;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
@@ -138,18 +143,17 @@ h1, h2 {
 }
 
 .programming .skill-fill {
-  background: #b3e6b3; /* pastel green */
+  background: #b3e6b3;
 }
 
 .technical .skill-fill {
-  background: #f7b5d5; /* pastel pink */
+  background: #f7b5d5;
 }
 
 .soft .skill-fill {
-  background: #add8e6; /* light blue */
+  background: #add8e6;
 }
 
-/* Projects Section */
 #projects {
   text-align: center;
   padding: 80px 20px;
