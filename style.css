@@ -97,12 +97,21 @@ h1, h2 {
 }
 
 #skills {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#skills h2 {
+  margin-bottom: 40px;
+}
+
+.skills-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  text-align: left;
 }
 
 .skills-category {
