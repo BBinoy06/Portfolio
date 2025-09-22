@@ -182,7 +182,7 @@ h1, h2 {
   max-width: 700px;
   margin: 0 auto;
   overflow: hidden;
-  background: #0B0B45; /* keep background so no flashing */
+  background: #0B0B45;
 }
 
 .carousel-track {
