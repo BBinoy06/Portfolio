@@ -146,22 +146,23 @@ h1, h2 {
   box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
 }
 
-.skill-fill {
+.skill-level {
   height: 100%;
   border-radius: 10px;
 }
 
-.programming .skill-fill {
+.green {
   background: #b3e6b3;
 }
 
-.technical .skill-fill {
+.pink {
   background: #f7b5d5;
 }
 
-.soft .skill-fill {
+.blue {
   background: #add8e6;
 }
+
 
 #projects {
   display: flex;
